@@ -7,7 +7,7 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '18.x'
+    versionSpec: '20.x'
   displayName: 'Install Node.js'
 
 - script: |
@@ -19,6 +19,7 @@ steps:
     sleep 5
   displayName: 'Run App Test'
 
+<<<<<<< HEAD
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
@@ -32,3 +33,5 @@ steps:
     azureSubscription: 'SimpleNodeAPP'
     appName: 'simplenodeapptes'
     package: '$(Build.ArtifactStagingDirectory)/app.zip'
+=======
+>>>>>>> af0c52c399860782b09499218af14bee2530b139
