@@ -18,3 +18,4 @@ steps:
     npm start &
     sleep 5
   displayName: 'Run App Test'
+
